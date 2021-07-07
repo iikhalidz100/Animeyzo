@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/f323026c39.js" crossorigin="anonymous"></script>
+  <title>Animeyzo</title>
+
+
+</head>
+
+<body style="background-color:#E3E2DF">
+  <!-- <section class="sec"> -->
+
+
+
+
+  <div class="headerPage">
+
+    <br>
+    <br><br><br>
+    <br><br>
+  </div>
+  <!-- here is the navgation bar -->
+
+  <div class="topnav  " id="navbar">
+    <a href="#home" onclick="home()"><i class="fa fa-home"></i><strong> Home</strong></a>
+    <a href="#Anime" onclick="anime()" > <i class="fas fa-play-circle"></i><strong> Anime</strong></a>
+    <a href="#Manga" onclick="manga()" > <i class="fas fa-book-open"> </i><strong> Manga</strong></a>
+    <a href="#Contact us" onclick="contact()">  <i class="fas fa-envelope"></i><strong> Contact us</strong></a>
+    <a href="aboutUs.html" target="_blank" > <i class="far fa-address-card"></i> <strong> About us</strong></a>
+    <a href="https://covid-19.ontario.ca/self-assessment/" target="_blank" > <i class="fas fa-biohazard"></i> <strong>COVID-19 Test</strong></a>
+    <input type="text" id="myInput" onkeyup="SearchFun() " placeholder="Search for names.." style="width:500px;height:40px;">
+
+
+  </div>
+  <br>
+  <!-- class="srch" style="display:none;" onmouseleave="hideSerachElements()" -->
+  <ul id="myUL" class="srch" style="display:none;" onmouseleave="hideSerachElements()">
+    <li><a onclick="boxSHadow('Naruto')" href="#Naruto">Naruto Shippuden</a></li>
+    <li><a onclick="boxSHadow('Claymore')" href="#Claymore">Claymore</a></li>
+    <li><a onclick="boxSHadow('Attack')" href="#Attack">Attack on titan</a></li>
+    <li><a onclick="boxSHadow('Fullmetal')" href="#Fullmetal">Fullmetal Alchemist: Brotherhood </a></li>
+    <li><a onclick="boxSHadow('One')" href="#One">One piece</a></li>
+    <li><a onclick="boxSHadow('Hunter')" href="#Hunter">hunterxhunter</a></li>
+    <li><a onclick="boxSHadow('Dragon')" href="#Dragon">dragon ball super</a></li>
+    <li><a onclick="boxSHadow('Death')" href="#Death">Death note</a></li>
+    <li><a onclick="boxSHadow('Berserk')" href="#Berserk">Berserk</a></li>
+    <li><a onclick="boxSHadow('Steins')" href="#Steins">Steins;Gate</a></li>
+    <li><a onclick="boxSHadow('Conan')" href="#Conan">Conan</a></li>
+    <li><a onclick="boxSHadow('Sowrd')" href="#Sowrd">Sowrd art online</a></li>
+    <li><a onclick="boxSHadow('Tokyo')" href="#Tokyo">tokyo ghoul</a></li>
+    <li><a onclick="boxSHadow('Psycho')" href="#Psycho">psycho pass</a></li>
+    <li><a onclick="boxSHadow('Fairy')" href="#Fairy">fairy tail</a></li>
+
+  </ul>
+
+
+  <div class="center">
+    <br><br>
+
+
+  </div>
+
+
+
+
+
+  <div class="close" style="display:none">
+
+
+    <!-- postterr -->
+    <section class="ssec">
+
+      <div class="Title">
+        <h1>Anime</h1>
+      </div>
+
+    </section>
+    <!-- <div class="row"> -->
+    <div class="sec">
+
+
+      <section class="secx">
+
+
+        <div class="wrapper">
+          <div class="card" id="Naruto" onmouseleave="NoboxSHadow('Naruto')">
+            <img src="anime/naruto.jpg" alt="naruto shipuden">
+            <div class="descriptions">
+              <h1>Naruto </h1>
+              <p>Animation, Action, Adventure</p>
+
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+
+              <p>Naruto Uzumaki, is a loud, hyperactive, adolescent ninja who constantly searches for approval and recognition, as well as to become Hokage, who is acknowledged as the leader and strongest of all ninja in the village.</p>
+
+
+              <button class="button button1" onclick="window.open('https://www.imdb.com/title/tt0988824/?ref_=ttls_li_i','_blank') ">See in IMDB</button>
+              <a href="NarutoPage.html">
+              <button class="button button2" >Watch</button></a>
+
+
+
+            </div>
+
+            <br>
+          </div>
+
+
+
+
+          <div class="card" id="Attack" title="haha" onmouseleave="NoboxSHadow('Attack')">
+            <img src="anime/aot.jpg" alt="Attack on Titan">
+            <div class="descriptions">
+              <h1>Attack on Titan</h1>
+              <p>Animation, Action, Adventure</p>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star "></span>
+              <p>Humans are nearly exterminated by giant creatures called Titans. Titans are typically several stories tall, seem to have no intelligence, devour human beings and, worst of all, seem to do it for the pleasure rather than as a food
+                source.
+              </p>
+
+              <button class="button button1" onclick="window.open('https://www.imdb.com/title/tt2560140/?ref_=ttls_li_tt','_blank') "> See in IMDB</button>
+              <a href="AttackOnTitan.html">
+              <button class="button button2">Watch</button></a>
+
+              <br>
+
+
+            </div>
+          </div>
+
+
+
+          <div class="card" id="Fullmetal" onmouseleave="NoboxSHadow('Fullmetal')">
+            <img src="anime/full metal al.jpg" alt="Fullmetal Alchemist: Brotherhood ">
+            <div class="descriptions">
+              <h1>Fullmetal Alchemist: Brotherhood </h1>
+              <p>Animation, Action, Adventure</p>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <p>Two brothers search for a Philosopher's Stone after an attempt to revive their deceased mother goes awry To save his brother, Edward sacrifices his right arm and leaves them in damaged physical forms right arm and leaves.</p>
+
+
+              <button class="button button1" onclick="window.open('https://www.imdb.com/title/tt1355642/?ref_=ttls_li_tt','_blank') ">See in IMDB</button>
+              <a href="fullmetal.html">
+              <button class="button button2">Watch</button></a>
+                            <br>
+            </div>
+          </div>
+
+
+
+
+          <div class="card" id="Death" onmouseleave="NoboxSHadow('Death')">
+            <img src="anime/death note.jpg" alt="death note">
+            <div class="descriptions">
+              <h1>Death Note</h1>
+              <p>Animation, Crime, Drama </p>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <p>After an intelligent yet cynical high school student begins to cleanse the world from evil with the international authorities call upon a mysterious detective known as detective known as "L" to thwart his efforts.with the world. and
+                they
+                cant move</p>
+
+
+              <button class="button button1" onclick="window.open('https://www.imdb.com/title/tt0877057/?ref_=ttls_li_tt','_blank') ">See in IMDB</button>
+              <a href="deathnote.html">
+              <button class="button button2">Watch</button></a>              <br>
+            </div>
+          </div>
+
+
+
+
+
+
+
+          <div class="card" id="Berserk" onmouseleave="NoboxSHadow('Berserk')">
+            <img src="anime/berserk.jpg" alt="berserk">
+            <div class="descriptions">
+              <h1>Berserk</h1>
+              <p>Animation, Action, Adventure</p>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star "></span>
+              <span class="fa fa-star "></span>
+              <p>Guts is a skilled swordsman who joins forces with a mercenary group named 'The Band of the Hawk', lead by the charismatic Griffith, and fights with them as they battle their way into the royal court.and fights with them as they
+                battle.
+              </p>
+
+
+              <button class="button button1" onclick="window.open('https://www.imdb.com/title/tt0318871/?ref_=ttls_li_i','_blank') ">See in IMDB</button>
+              <a href="berserk.html">
+              <button class="button button2">Watch</button></a>                <br>
+            </div>
+          </div>
+
+
+
+          <div class="card" id="One" onmouseleave="NoboxSHadow('One')">
+            <img src="anime/one piece.jpg" alt="one piece">
+            <div class="descriptions">
+              <h1>One Piece</h1>
+              <p>Animation, Action, Adventure</p>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <p>There once lived a pirate named Gol D. Roger, Follows the adventures of Monkey D. Luffy and his pirate crew in order to find the greatest treasure ever left by the legendary Pirate, Gold Roger. The famous mystery treasure named "One
+                Piece".</p>
+
+
+              <button class="button button1" onclick="window.open('https://www.imdb.com/title/tt0388629/?ref_=ttls_li_i','_blank') ">See in IMDB</button>
+              <a href="OnePiece.html">
+              <button class="button button2">Watch</button></a>
+            </div>
+            <br>
+          </div>
+
+
+
+          <div class="card" id="Dragon" onmouseleave="NoboxSHadow('Dragon')">
+            <img src="anime/dragon ball super.jpg" alt="dragon ball super">
+            <div class="descriptions">
+              <h1>Dragon Ball Super</h1>
+              <p>Animation, Action, Adventure</p>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star "></span>
+              <p>With Majin Buu defeated half-a-year prior, peace returns to Earth, where Son Goku (now a radish farmer) and his friends now live peaceful lives. However, a new threat appears in the form of Beerus, the God of Destruction. Considered
+                the
+                most .</p>
+
+
+              <button class="button button1" onclick="window.open('https://www.imdb.com/title/tt4644488/?ref_=ttls_li_tt','_blank') ">See in IMDB</button>
+              <a href="DragonBall.html">
+              <button class="button button2">Watch</button></a>              <br>
+
+            </div>
+          </div>
+
+
+
+
+          <div class="card" id="Hunter" onmouseleave="NoboxSHadow('Hunter')">
+            <img src="anime/hunterxhunter.jpg" alt="hunterxhunter">
+            <div class="descriptions">
+              <h1>HunterxHunter</h1>
+              <p>Animation, Action, Adventure</p>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <p>Gon Freecss is a young boy living on Whale Island. He learns from "Hunter" Kite, that his father, who he was told was dead, is still alive somewhere as a top "Hunter," risking his life to seek unknown items, such as hidden treasures,
+                curiosa,.</p>
+
+
+              <button class="button button1" onclick="window.open('https://www.imdb.com/title/tt2098220/?ref_=ttls_li_tt','_blank') ">See in IMDB</button>
+              <a href="Hunter.html">
+              <button class="button button2">Watch</button></a>
+
+              <br>
+            </div>
+
+          </div>
+
+
+
+          <div class="card" id="Conan" onmouseleave="NoboxSHadow('Conan')">
+            <img src="anime/conan.jpg" alt="conan">
+            <div class="descriptions">
+              <h1>Detective Conan</h1>
+              <p>Animation, Action, Drama</p>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked "></span>
+              <span class="fa fa-star "></span>
+              <p>Shinichi Kudo, a seventeen year old master detective, had it all. He could solve any case brought to his attention and in record time. His girlfriend, Ran, is a karate expert, and her father is a bumbling P.I. who is driven crazy
+              </p>
+
+
+              <button class="button button1" onclick="window.open('https://www.imdb.com/title/tt0131179/?ref_=ttls_li_tt','_blank') ">See in IMDB</button>
+              <a href="Conan.html">
+              <button class="button button2">Watch</button></a>
+              <br>
+
+            </div>
+          </div>
+
+
+
+
+          <div class="card" id="Sowrd" onmouseleave="NoboxSHadow('Sowrd')">
+            <img src="anime/sowrd art online.jpg" alt="sowrd art online">
+            <div class="descriptions">
+              <h1>Sword Art Online</h1>
+              <p>Animation, Action, Adventure</p>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <p>The year is 2022, and gamers have lined up on launch day for Sword Art Online, a hotly-anticipated MMORPG that lets players connect to an immersive virtual reality world with special helmets called Nerve Gear. </p>
+
+
+              <button class="button button1" onclick="window.open('https://www.imdb.com/title/tt2250192/?ref_=ttls_li_tt','_blank') ">See in IMDB</button>
+              <a href="Sword.html">
+              <button class="button button2">Watch</button></a>
+              <br>
+            </div>
+
+          </div>
+          <div class="card" id="Steins" onmouseleave="NoboxSHadow('Steins')">
+            <img src="anime/steins gate.jpg" alt="Steins;Gate ">
+            <div class="descriptions">
+              <h1>Steins Gate </h1>
+              <p>Animation, fantazya, Adventure</p>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star "></span>
+              <p>Okabe Rintarou, a university student who refers to himself as Crazy Mad Scientist Hououin Kyouma and his lab's members work on a microwave device that can transfer messages to the past. Without getting captured, they should get it
+                working in order </p>
+
+
+              <button class="button button1" onclick="window.open('https://www.imdb.com/title/tt1910272/?ref_=ttls_li_tt','_blank') ">See in IMDB</button>
+              <a href="steins gate1.html">
+              <button class="button button2">Watch</button></a>
+              <br>
+
+            </div>
+          </div>
+
+
+          <div class="card" id="Fairy" onmouseleave="NoboxSHadow('Fairy')">
+            <img src="anime/fairy tail.jpg" alt="fairy tail.jpg">
+            <div class="descriptions">
+              <h1>fairy tail</h1>
+              <p>Animation, Action, Adventure</p>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <p>Lucy, a 17 year old girl, sets out on journey to become a full-fledged wizard and joins the strongest and most (in) famous guild FAIRY TAIL where she meets Natsu, Happy, Gray and Erza, who treat her more like family than friends.</p>
+
+
+              <button class="button button1" onclick="window.open('https://www.imdb.com/title/tt1528406/?ref_=ttls_li_tt','_blank') ">See in IMDB</button>
+              <a href="FairyTale.html">
+              <button class="button button2">Watch</button></a>
+              <br>
+
+            </div>
+          </div>
+
+
+          <div class="card" id="Psycho" onmouseleave="NoboxSHadow('Psycho')">
+            <img src="anime/psycho pass.jpg" alt="psycho pass">
+            <div class="descriptions">
+              <h1>Psycho Pass</h1>
+              <p>Animation, Action, Adventure</p>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star "></span>
+              <span class="fa fa-star "></span>
+              <p>In a futuristic world where criminal intent is analyzed by the Sybil System, a new top of the class recruit, Akane Tsunemori, joins the police force; however, she always puts her own sense of justice above the judgment of Sybil.
+                Police
+                are helped by Enforcers.</p>
+
+
+              <button class="button button1" onclick="window.open('https://www.imdb.com/title/tt2379308/?ref_=ttls_li_tt','_blank') ">See in IMDB</button>
+              <a href="PhsycoPass.html">
+              <button class="button button2">Watch</button></a>
+              <br>
+
+            </div>
+          </div>
+
+
+
+          <div class="card" id="Tokyo" onmouseleave="NoboxSHadow('Tokyo)">
+            <img src="anime/tokyo ghoul.jpg" alt="tokyo ghoul">
+            <div class="descriptions">
+              <h1>Tokyo Ghoul</h1>
+              <p>Animation, Action, Drama</p>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <p>The suspense horror/dark fantasy story is set in Tokyo, which is haunted by mysterious "ghouls" who are devouring humans. People are gripped by the fear of these ghouls whose identities are masked in mystery. An ordinary college
+                student
+              </p>
+
+
+              <button class="button button1" onclick="window.open('https://www.imdb.com/title/tt3741634/?ref_=ttls_li_tt','_blank') ">See in IMDB</button>
+              <a href="Tokyo.html">
+              <button class="button button2">Watch</button></a>
+              <br>
+
+            </div>
+          </div>
+
+
+          <div class="card" id="Black" onmouseleave="NoboxSHadow('Black')">
+            <img src="anime/black lagon.jpg" alt="black lagon">
+            <div class="descriptions">
+              <h1>Black Lagoon </h1>
+              <p>Animation, Action, Adventure</p>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <p>A Japanese businessman, captured by modern-day pirates, is written off and left for dead by his company. Tired of the corporate life, he opts to stick with the mercenaries that kidnapped him, becoming part of their gang.
+              </p>
+
+
+              <button class="button button1" onclick="window.open('https://www.imdb.com/title/tt0962826/?ref_=ttls_li_tt','_blank') ">See in IMDB</button>
+              <a href="BlackLagoon.html">
+              <button class="button button2">Watch</button></a>
+              <br>
+
+            </div>
+          </div>
+
+
+
+          <div class="card" id="Claymore" onmouseleave="NoboxSHadow('Claymore')">
+            <img src="anime/claymore.jpg" alt="Claymore ">
+            <div class="descriptions">
+              <h1>Claymore </h1>
+              <p>Animation, Action, Adventure</p>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star "></span>
+              <span class="fa fa-star "></span>
+              <p>In a world rife with deadly creatures called "youma", a young silver eyed woman, Clare, works on behalf of an organization that trains female youma halfbreeds into warriors with the ability to destroy these creatures. </p>
+
+
+              <button class="button button1" onclick="window.open('https://www.imdb.com/title/tt0985344/?ref_=ttls_li_tt','_blank') ">See in IMDB</button>
+              <a href="Claymore.html">
+              <button class="button button2">Watch</button></a>
+            </div>
+            <br>
+          </div>
+
+        </div>
+
+
+
+      </section>
+
+
+
+    </div>
+
+  </div>
+
+  <!-- breakkkkkkkkkkkkkkkkkk -->
+  <div class="manga" style="display:none;">
+    <section class="ssec">
+    <div class="Title">
+      <h1>Manga</h1>
+    </div>
+  </section>
+
+    <div class="sec">
+
+
+      <section class="secx">
+
+
+        <div class="wrapper">
+          <div class="card">
+            <img src="manga/aot.jpg" alt="Shingeki no Kyojin">
+            <div class="descriptions">
+              <h1>Shingeki no Kyojin</h1>
+              <p>Action, Mystery, Drama, Fantasy, Horror, Shounen</p>
+
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <p>Hundreds of years ago, horrifying creatures which resembled humans appeared. These mindless, towering giants, called "titans," proved to be an existential threat, as they preyed on whatever humans they could find in order to satisfy
+              </p>
+
+
+              <button class="button button1" onclick="window.open('https://myanimelist.net/manga/23390/Shingeki_no_Kyojin','_blank') ">See in MyAnimeList</button>
+              <button class="button button2" onclick="window.open('https://www.shqqaa.com/manga/shingeki-no-kyojin/','_blank') ">Read</button>
+
+              <br>
+            </div>
+          </div>
+
+
+
+
+          <div class="card">
+            <img src="manga/naruto.jpg" alt="Naruto Shippuden">
+            <div class="descriptions">
+              <h1>Naruto Shippuden</h1>
+              <p> Action, Adventure, Martial Arts, Shounen, Super Power</p>
+
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <p>Whenever Naruto Uzumaki proclaims that he will someday become the Hokage—a title bestowed upon the best ninja in the Village Hidden in the Leaves—no one takes him seriously. Since birth, Naruto has been shunned and ridiculed by his
+                fellow villagers. </p>
+
+
+              <button class="button button1" onclick="window.open('https://myanimelist.net/manga/11/Naruto','_blank') ">See in MyAnimeList</button>
+              <button class="button button2" onclick="window.open('http://mangaae.com/naruto','_blank') ">Read</button>
+
+              <br>
+            </div>
+          </div>
+
+
+
+          <div class="card">
+            <img src="manga/bleach.jpg" alt="bleach">
+            <div class="descriptions">
+              <h1>Bleach</h1>
+              <p>Action, Adventure, Shounen, Super Power, Supernatural</p>
+
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <p>For as long as he can remember, high school student Ichigo Kurosaki has been able to see the spirits of the dead, but that has not stopped him from leading an ordinary life. One day, Ichigo returns home to find an intruder in his
+                room.
+              </p>
+
+
+              <button class="button button1" onclick="window.open('https://myanimelist.net/manga/12/Bleach','_blank') ">See in MyAnimeList</button>
+              <button class="button button2" onclick="window.open('https://mangaae.com/bleach/','_blank') ">Read</button>
+
+              <br>
+            </div>
+          </div>
+
+
+
+          <div class="card">
+            <img src="manga/one piece.jpg" alt="one piece">
+            <div class="descriptions">
+              <h1>One Piece</h1>
+              <p> Action, Adventure, Comedy, Fantasy, Shounen, Super Power</p>
+
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <p>Gol D. Roger, a man referred to as the "Pirate King," is set to be executed by the World Government. But just before his demise, he confirms the existence of a great treasure, One Piece, located somewhere within the vast ocean known
+                .</p>
+
+
+              <button class="button button1" onclick="window.open('https://myanimelist.net/manga/13/One_Piece','_blank') ">See in MyAnimeList</button>
+              <button class="button button2" onclick="window.open('https://mangaarabteam.com/manga/one-piece/','_blank') ">Read</button>
+
+              <br>
+            </div>
+          </div>
+
+
+
+
+          <div class="card">
+            <img src="manga/tokyo.jpg" alt="tokyo ghoul">
+            <div class="descriptions">
+              <h1>Tokyo Ghoul</h1>
+              <p> Action, Mystery, Drama, Horror, Supernatural, Psychological, Seinen</p>
+
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <p>Lurking within the shadows of Tokyo are frightening beings known as "ghouls," who satisfy their hunger by feeding on humans once night falls. An organization known as the Commission of Counter Ghoul (CCG) has been established in
+                .</p>
+
+
+              <button class="button button1" onclick="window.open('https://myanimelist.net/manga/33327/Tokyo_Ghoul','_blank') ">See in MyAnimeList</button>
+              <button class="button button2" onclick="window.open('https://mangaae.com/tokyo-ghoul/','_blank') ">Read</button>
+
+              <br>
+            </div>
+          </div>
+
+
+
+          <div class="card">
+            <img src="manga/death note.jpg" alt="death note">
+            <div class="descriptions">
+              <h1>Death Note</h1>
+              <p>Mystery, Drama, Shounen, Supernatural, Psychological</p>
+
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star "></span>
+              <p>Ryuk, a god of death, drops his Death Note into the human world for personal pleasure. In Japan, prodigious high school student Light Yagami stumbles upon it. Inside the notebook, he finds a chilling message: those whose names are
+                .</p>
+
+              <button class="button button1" onclick="window.open('https://myanimelist.net/manga/21/Death_Note','_blank') ">See in MyAnimeList</button>
+              <button class="button button2" onclick="window.open('https://mangaae.com/death-note','_blank') ">Read</button>
+
+              <br>
+            </div>
+          </div>
+
+
+          <div class="card">
+            <img src="manga/fairy.jpg" alt="fairy tail">
+            <div class="descriptions">
+              <h1>Fairy Tail</h1>
+              <p>Action, Adventure, Comedy, Ecchi, Fantasy, Magic, Shounen</p>
+
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star "></span>
+              <p>In the mystical realm of Earth Land, magic exists at the core of everyday life for its inhabitants, from transportation to utilities and everything in between. therefore, to prevent dark forces from upsetting the natural order of
+                things
+                .</p>
+
+              <button class="button button1" onclick="window.open('https://myanimelist.net/manga/598/Fairy_Tail','_blank') ">See in MyAnimeList</button>
+              <button class="button button2" onclick="window.open('https://mangaae.com/fairy-tail/','_blank') ">Read</button>
+
+              <br>
+            </div>
+          </div>
+
+
+
+          <div class="card">
+            <img src="manga/full.jpg" alt="full metal alchmest">
+            <div class="descriptions">
+              <h1>Full Metal Alchmest: Brotherhood</h1>
+              <p>Action, Adventure, Comedy, Drama, Shounen, Military</p>
+
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <p>Alchemists are knowledgeable and naturally talented individuals who can manipulate and modify matter due to their art. Yet despite the wide range of possibilities, alchemy is not as all-powerful as most would believe.</p>
+
+              <button class="button button1 bt_Full_Metal_alchmest" onclick="window.open('https://myanimelist.net/manga/25/Fullmetal_Alchemist','_blank') ">See in MyAnimeList</button>
+              <button class="button button2 bt_Full_Metal_alchmest" onclick="window.open('https://mangaae.com/full-metal-alchemist','_blank') ">Read</button>
+
+              <br>
+            </div>
+          </div>
+
+
+          <div class="card">
+            <img src="manga/hunter.jpg" alt="HunterxHunter">
+            <div class="descriptions">
+              <h1>HunterxHunter</h1>
+              <p>Action, Mystery, Drama, Fantasy, Horror, Shounen </p>
+
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <p>Gon Freecss wants to become a Hunter so he can find his father, a man who abandoned him to pursue a life of adventure. But it's not that simple: only one in one hundred thousand can pass the Hunter Exam, and that is just the first
+                .</p>
+
+              <button class="button button1" onclick="window.open('https://myanimelist.net/manga/26/Hunter_x_Hunter','_blank') ">See in MyAnimeList</button>
+              <button class="button button2" onclick="window.open('http://mangaae.com/hun-terxhun-ter','_blank') ">Read</button>
+
+              <br>
+            </div>
+          </div>
+
+
+
+          <div class="card">
+            <img src="manga/sho.jpg" alt="Shokugeki no Souma">
+            <div class="descriptions">
+              <h1>Shokugeki no Souma</h1>
+              <p>Ecchi, School, Shounen</p>
+
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <p>In the meantime, Souma is urged by his father to attend Tootsuki Culinary Academy: a world-renowned school where expulsions of incompetent students are commonplace. Due to the curriculum's rigor, any student that manages to graduate
+                .</p>
+
+              <button class="button button1" onclick="window.open('https://myanimelist.net/manga/45757/Shokugeki_no_Souma','_blank') ">See in MyAnimeList</button>
+              <button class="button button2" onclick="window.open('https://mangaarabteam.com/manga/shokugeki-no-soma/','_blank') ">Read</button>
+
+              <br>
+            </div>
+          </div>
+
+
+          <div class="card">
+            <img src="manga/neverland.jpg" alt="The Promised Neverland">
+            <div class="descriptions">
+              <h1>The Promised Neverland</h1>
+              <p>Mystery, Horror, Sci-Fi, Shounen</p>
+
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star "></span>
+              <span class="fa fa-star "></span>
+              <p>At Grace Field House, life couldn't be better for the orphans! Though they have no parents, together with the other kids and a kind "Mama" who cares for them, they form one big, happy family. No child is ever overlooked, especially
+                .
+              </p>
+
+              <button class="button button1" onclick="window.open('https://myanimelist.net/manga/100128/Yakusoku_no_Neverland','_blank') ">See in MyAnimeList</button>
+              <button class="button button2" onclick="window.open('https://mangaae.com/1theprom-isedneve-rland/','_blank') ">Read</button>
+
+              <br>
+            </div>
+          </div>
+
+
+
+          <div class="card">
+            <img src="manga/nana.jpg" alt="Nanatsu no Taizai" style="width:100%">
+            <div class="descriptions">
+              <h1>Nanatsu no Taizai</h1>
+              <p>Action, Adventure, Fantasy, Shounen, Supernatural</p>
+
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <p>In a world where injustice prevails, the Holy Knights of Britannia protect their homeland with their unparalleled magic and strength. Their most sought-after targets are "The Seven Deadly Sins"
+              </p>
+
+              <button class="button button1" onclick="window.open('https://myanimelist.net/manga/44485/Nanatsu_no_Taizai','_blank') ">See in MyAnimeList</button>
+              <button class="button button2" onclick="window.open('https://mangaarabteam.com/manga/nanatsu-no-taizai/','_blank') ">Read</button>
+
+              <br>
+            </div>
+          </div>
+
+
+          <div class="card">
+            <img src="manga/vinland.jpg" alt="Vinland Saga" style="width:100%">
+            <div class="descriptions">
+              <h1>Vinland Saga</h1>
+              <p>Action, Drama, Fantasy, Shounen, Super Power, Supernatural</p>
+
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star "></span>
+              <p>Thorfinn, son of one of the Vikings' greatest warriors, is among the finest fighters in the merry band of mercenaries run by the cunning Askeladd, an impressive feat for a person his age. However, Thorfinn is not part of the group
+                .</p>
+
+              <button class="button button1" onclick="window.open('https://myanimelist.net/manga/642/Vinland_Saga','_blank') ">See in MyAnimeList</button>
+              <button class="button button2" onclick="window.open('https://mangaarabteam.com/manga/vinland-saga/','_blank') ">Read</button>
+
+              <br>
+            </div>
+          </div>
+
+
+
+          <div class="card">
+            <img src="manga/Kimetsu no Yaiba.jpg" alt="Kimetsu no Yaiba">
+            <div class="descriptions">
+              <h1>Kimetsu no Yaiba</h1>
+              <p>Action, Demons, Historical, Shounen</p>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <p>Tanjirou Kamado lives with his impoverished family on a remote mountain. As the oldest sibling, he took upon the responsibility of ensuring his family's livelihood after the death of his father. On a cold winter day.</p>
+              <br><br>
+              <button class="button button1 bt" onclick="window.open('https://myanimelist.net/manga/96792/Kimetsu_no_Yaiba','_blank') ">See in MyAnimeList</button>
+              <button class="button button2 bt" onclick="window.open('http://mangaae.com/1ki-mets-uno-yai-baa/','_blank') ">Read</button>
+
+              <br>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="manga/pandora.jpg" alt="Pandora Hearts" style="width:100%">
+            <div class="descriptions">
+              <h1>Pandora Hearts</h1>
+              <p>Adventure, Mystery, Fantasy, Shounen</p <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star "></span>
+              <p>Reminiscent of a broken toy box, the mystical Abyss is a terrifying realm home to monstrous creatures called "Chains." Most believe it to be only a fairy tale, used to scare children who misbehave. Oz Vessalius
+                .</p>
+
+              <button class="button button1" onclick="window.open('https://myanimelist.net/manga/3031/Pandora_Hearts','_blank') ">See in MyAnimeList</button>
+              <button class="button button2" onclick="window.open('https://manga.ae/pandora-hearts','_blank') ">Read</button>
+
+              <br>
+            </div>
+          </div>
+
+
+
+          <div class="card">
+
+            <img src="manga/dead.jpg" alt="Deadman Wonderland" style="width:100%">
+            <div class="descriptions">
+              <h1>Deadman Wonderland</h1>
+              <p>Action, Mystery, Drama, Fantasy, Horror, Shounen</p>
+
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star "></span>
+              <span class="fa fa-star "></span>
+              <p>After a powerful earthquake nearly destroyed all of Tokyo, a prison known as Deadman Wonderland rose from what was left of the city. Privately-run through the guise and functions of a theme park
+                .</p>
+
+              <button class="button button1" onclick="window.open('https://myanimelist.net/manga/3986/Deadman_Wonderland/pics','_blank') ">See in MyAnimeList</button>
+              <button class="button button2" onclick="window.open('https://mangaae.com/deadman-wonderland','_blank') ">Read</button>
+              <br>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <div class="contact" style="display:none;">
+    <div class="Title">
+      <h1>Contact us</h1>
+
+    </div>
+
+    <form class="myform " action="Contact_Handler.php" method="post">
+      <input type="text" id="fname" name="fullName" placeholder="Full Name ...">
+
+      <input type="text" id="email" name="email" placeholder="E-mail ...">
+
+      <input type="text" id="phone" name="phone" placeholder="Phone Number ...">
+
+
+      <!-- <label for="subject">Subject</label> -->
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      <br>
+      <button type="hidden" class="button button3" data-rel="back" name="sub" onclick="anime1()" style="  padding: 12px 55px; "><strong>Submit</strong></button>
+      <br>
+      <!-- <input type="submit" value="Submit"> -->
+    </form>
+
+
+
+    <br>
+    <div class="location">
+      <ul>
+        <li><i class="fa fa-map-marker" aria-hidden="true"></i> Jeddah Saudi Arabia, King Abdulaziz University, Makkah Province, 23325</li><br>
+        <li><i class="fa fa-phone" aria-hidden="true"></i> +966-555555555</li>
+        <li><i class="fa fa-envelope-o" aria-hidden="true"></i> animeyzo@xyz.com</li>
+      </ul>
+
+    </div>
+
+
+  </div>
+
+  <div class="homePage">
+
+        <!-- postterr -->
+        <section class="ssec">
+
+          <div class="Title">
+            <h1>Anime</h1>
+          </div>
+
+        </section>
+        <!-- <div class="row"> -->
+        <div class="sec">
+
+
+          <section class="secx">
+
+
+            <div class="wrapper">
+              <div class="card" id="Naruto" onmouseleave="NoboxSHadow('Naruto')">
+                <img src="anime/naruto.jpg" alt="naruto shipuden">
+                <div class="descriptions">
+                  <h1>Naruto </h1>
+                  <p>Animation, Action, Adventure</p>
+
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+
+                  <p>Naruto Uzumaki, is a loud, hyperactive, adolescent ninja who constantly searches for approval and recognition, as well as to become Hokage, who is acknowledged as the leader and strongest of all ninja in the village.</p>
+
+
+                  <button class="button button1" onclick="window.open('https://www.imdb.com/title/tt0988824/?ref_=ttls_li_i','_blank') ">See in IMDB</button>
+                  <a href="NarutoPage.html">
+                  <button class="button button2" >Watch</button></a>
+
+
+
+                </div>
+
+                <br>
+              </div>
+
+
+
+
+              <div class="card" id="Attack" title="haha" onmouseleave="NoboxSHadow('Attack')">
+                <img src="anime/aot.jpg" alt="Attack on Titan">
+                <div class="descriptions">
+                  <h1>Attack on Titan</h1>
+                  <p>Animation, Action, Adventure</p>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star "></span>
+                  <p>Humans are nearly exterminated by giant creatures called Titans. Titans are typically several stories tall, seem to have no intelligence, devour human beings and, worst of all, seem to do it for the pleasure rather than as a food
+                    source.
+                  </p>
+
+                  <button class="button button1" onclick="window.open('https://www.imdb.com/title/tt2560140/?ref_=ttls_li_tt','_blank') "> See in IMDB</button>
+                  <a href="AttackOnTitan.html">
+                  <button class="button button2">Watch</button></a>
+
+                  <br>
+
+
+                </div>
+              </div>
+
+
+
+              <div class="card" id="Fullmetal" onmouseleave="NoboxSHadow('Fullmetal')">
+                <img src="anime/full metal al.jpg" alt="Fullmetal Alchemist: Brotherhood ">
+                <div class="descriptions">
+                  <h1>Fullmetal Alchemist: Brotherhood </h1>
+                  <p>Animation, Action, Adventure</p>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <p>Two brothers search for a Philosopher's Stone after an attempt to revive their deceased mother goes awry To save his brother, Edward sacrifices his right arm and leaves them in damaged physical forms right arm and leaves.</p>
+
+
+                  <button class="button button1" onclick="window.open('https://www.imdb.com/title/tt1355642/?ref_=ttls_li_tt','_blank') ">See in IMDB</button>
+                  <a href="fullmetal.html">
+                  <button class="button button2">Watch</button></a>
+                                <br>
+                </div>
+              </div>
+
+
+
+
+              <div class="card" id="Death" onmouseleave="NoboxSHadow('Death')">
+                <img src="anime/death note.jpg" alt="death note">
+                <div class="descriptions">
+                  <h1>Death Note</h1>
+                  <p>Animation, Crime, Drama </p>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <p>After an intelligent yet cynical high school student begins to cleanse the world from evil with the international authorities call upon a mysterious detective known as detective known as "L" to thwart his efforts.with the world. and
+                    they
+                    cant move</p>
+
+
+                  <button class="button button1" onclick="window.open('https://www.imdb.com/title/tt0877057/?ref_=ttls_li_tt','_blank') ">See in IMDB</button>
+                  <a href="deathnote.html">
+                  <button class="button button2">Watch</button></a>              <br>
+                </div>
+              </div>
+
+
+
+
+
+
+
+              <div class="card" id="Berserk" onmouseleave="NoboxSHadow('Berserk')">
+                <img src="anime/berserk.jpg" alt="berserk">
+                <div class="descriptions">
+                  <h1>Berserk</h1>
+                  <p>Animation, Action, Adventure</p>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star "></span>
+                  <span class="fa fa-star "></span>
+                  <p>Guts is a skilled swordsman who joins forces with a mercenary group named 'The Band of the Hawk', lead by the charismatic Griffith, and fights with them as they battle their way into the royal court.and fights with them as they
+                    battle.
+                  </p>
+
+
+                  <button class="button button1" onclick="window.open('https://www.imdb.com/title/tt0318871/?ref_=ttls_li_i','_blank') ">See in IMDB</button>
+                  <a href="berserk.html">
+                  <button class="button button2">Watch</button></a>                <br>
+                </div>
+              </div>
+
+
+
+              <div class="card" id="One" onmouseleave="NoboxSHadow('One')">
+                <img src="anime/one piece.jpg" alt="one piece">
+                <div class="descriptions">
+                  <h1>One Piece</h1>
+                  <p>Animation, Action, Adventure</p>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <p>There once lived a pirate named Gol D. Roger, Follows the adventures of Monkey D. Luffy and his pirate crew in order to find the greatest treasure ever left by the legendary Pirate, Gold Roger. The famous mystery treasure named "One
+                    Piece".</p>
+
+
+                  <button class="button button1" onclick="window.open('https://www.imdb.com/title/tt0388629/?ref_=ttls_li_i','_blank') ">See in IMDB</button>
+                  <a href="OnePiece.html">
+                  <button class="button button2">Watch</button></a>
+                </div>
+                <br>
+              </div>
+
+
+
+              <div class="card" id="Dragon" onmouseleave="NoboxSHadow('Dragon')">
+                <img src="anime/dragon ball super.jpg" alt="dragon ball super">
+                <div class="descriptions">
+                  <h1>Dragon Ball Super</h1>
+                  <p>Animation, Action, Adventure</p>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star "></span>
+                  <p>With Majin Buu defeated half-a-year prior, peace returns to Earth, where Son Goku (now a radish farmer) and his friends now live peaceful lives. However, a new threat appears in the form of Beerus, the God of Destruction. Considered
+                    the
+                    most .</p>
+
+
+                  <button class="button button1" onclick="window.open('https://www.imdb.com/title/tt4644488/?ref_=ttls_li_tt','_blank') ">See in IMDB</button>
+                  <a href="DragonBall.html">
+                  <button class="button button2">Watch</button></a>              <br>
+
+                </div>
+              </div>
+
+
+
+
+              <div class="card" id="Hunter" onmouseleave="NoboxSHadow('Hunter')">
+                <img src="anime/hunterxhunter.jpg" alt="hunterxhunter">
+                <div class="descriptions">
+                  <h1>HunterxHunter</h1>
+                  <p>Animation, Action, Adventure</p>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <p>Gon Freecss is a young boy living on Whale Island. He learns from "Hunter" Kite, that his father, who he was told was dead, is still alive somewhere as a top "Hunter," risking his life to seek unknown items, such as hidden treasures,
+                    curiosa,.</p>
+
+
+                  <button class="button button1" onclick="window.open('https://www.imdb.com/title/tt2098220/?ref_=ttls_li_tt','_blank') ">See in IMDB</button>
+                  <a href="Hunter.html">
+                  <button class="button button2">Watch</button></a>
+
+                  <br>
+                </div>
+
+              </div>
+
+
+
+            </div>
+
+
+
+          </section>
+
+
+
+        </div>
+              <div class="Title">
+                <h1>Manga</h1>
+              </div>
+              <div class="sec">
+
+
+                <section class="secx">
+
+
+                  <div class="wrapper">
+
+              <div class="card">
+                <img src="manga/aot.jpg" alt="Shingeki no Kyojin">
+                <div class="descriptions">
+                  <h1>Shingeki no Kyojin</h1>
+                  <p>Action, Mystery, Drama, Fantasy, Horror, Shounen</p>
+
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <p>Hundreds of years ago, horrifying creatures which resembled humans appeared. These mindless, towering giants, called "titans," proved to be an existential threat, as they preyed on whatever humans they could find in order to satisfy
+                  </p>
+
+
+                  <button class="button button1" onclick="window.open('https://myanimelist.net/manga/23390/Shingeki_no_Kyojin','_blank') ">See in MyAnimeList</button>
+                  <button class="button button2" onclick="window.open('https://www.shqqaa.com/manga/shingeki-no-kyojin/','_blank') ">Read</button>
+
+                  <br>
+                </div>
+              </div>
+
+
+
+
+              <div class="card">
+                <img src="manga/naruto.jpg" alt="Naruto Shippuden">
+                <div class="descriptions">
+                  <h1>Naruto Shippuden</h1>
+                  <p> Action, Adventure, Martial Arts, Shounen, Super Power</p>
+
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <p>Whenever Naruto Uzumaki proclaims that he will someday become the Hokage—a title bestowed upon the best ninja in the Village Hidden in the Leaves—no one takes him seriously. Since birth, Naruto has been shunned and ridiculed by his
+                    fellow villagers. </p>
+
+
+                  <button class="button button1" onclick="window.open('https://myanimelist.net/manga/11/Naruto','_blank') ">See in MyAnimeList</button>
+                  <button class="button button2" onclick="window.open('http://mangaae.com/naruto','_blank') ">Read</button>
+
+                  <br>
+                </div>
+              </div>
+
+
+
+              <div class="card">
+                <img src="manga/bleach.jpg" alt="bleach">
+                <div class="descriptions">
+                  <h1>Bleach</h1>
+                  <p>Action, Adventure, Shounen, Super Power, Supernatural</p>
+
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <p>For as long as he can remember, high school student Ichigo Kurosaki has been able to see the spirits of the dead, but that has not stopped him from leading an ordinary life. One day, Ichigo returns home to find an intruder in his
+                    room.
+                  </p>
+
+
+                  <button class="button button1" onclick="window.open('https://myanimelist.net/manga/12/Bleach','_blank') ">See in MyAnimeList</button>
+                  <button class="button button2" onclick="window.open('https://mangaae.com/bleach/','_blank') ">Read</button>
+
+                  <br>
+                </div>
+              </div>
+
+
+
+              <div class="card">
+                <img src="manga/one piece.jpg" alt="one piece">
+                <div class="descriptions">
+                  <h1>One Piece</h1>
+                  <p> Action, Adventure, Comedy, Fantasy, Shounen, Super Power</p>
+
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <p>Gol D. Roger, a man referred to as the "Pirate King," is set to be executed by the World Government. But just before his demise, he confirms the existence of a great treasure, One Piece, located somewhere within the vast ocean known
+                    .</p>
+
+
+                  <button class="button button1" onclick="window.open('https://myanimelist.net/manga/13/One_Piece','_blank') ">See in MyAnimeList</button>
+                  <button class="button button2" onclick="window.open('https://mangaarabteam.com/manga/one-piece/','_blank') ">Read</button>
+
+                  <br>
+                </div>
+              </div>
+
+
+
+
+              <div class="card">
+                <img src="manga/tokyo.jpg" alt="tokyo ghoul">
+                <div class="descriptions">
+                  <h1>Tokyo Ghoul</h1>
+                  <p> Action, Mystery, Drama, Horror, Supernatural, Psychological, Seinen</p>
+
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <p>Lurking within the shadows of Tokyo are frightening beings known as "ghouls," who satisfy their hunger by feeding on humans once night falls. An organization known as the Commission of Counter Ghoul (CCG) has been established in
+                    .</p>
+
+
+                  <button class="button button1" onclick="window.open('https://myanimelist.net/manga/33327/Tokyo_Ghoul','_blank') ">See in MyAnimeList</button>
+                  <button class="button button2" onclick="window.open('https://mangaae.com/tokyo-ghoul/','_blank') ">Read</button>
+
+                  <br>
+                </div>
+              </div>
+
+
+
+              <div class="card">
+                <img src="manga/death note.jpg" alt="death note">
+                <div class="descriptions">
+                  <h1>Death Note</h1>
+                  <p>Mystery, Drama, Shounen, Supernatural, Psychological</p>
+
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star "></span>
+                  <p>Ryuk, a god of death, drops his Death Note into the human world for personal pleasure. In Japan, prodigious high school student Light Yagami stumbles upon it. Inside the notebook, he finds a chilling message: those whose names are
+                    .</p>
+
+                  <button class="button button1" onclick="window.open('https://myanimelist.net/manga/21/Death_Note','_blank') ">See in MyAnimeList</button>
+                  <button class="button button2" onclick="window.open('https://mangaae.com/death-note','_blank') ">Read</button>
+
+                  <br>
+                </div>
+              </div>
+
+
+              <div class="card">
+                <img src="manga/fairy.jpg" alt="fairy tail">
+                <div class="descriptions">
+                  <h1>Fairy Tail</h1>
+                  <p>Action, Adventure, Comedy, Ecchi, Fantasy, Magic, Shounen</p>
+
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star "></span>
+                  <p>In the mystical realm of Earth Land, magic exists at the core of everyday life for its inhabitants, from transportation to utilities and everything in between. therefore, to prevent dark forces from upsetting the natural order of
+                    things
+                    .</p>
+
+                  <button class="button button1" onclick="window.open('https://myanimelist.net/manga/598/Fairy_Tail','_blank') ">See in MyAnimeList</button>
+                  <button class="button button2" onclick="window.open('https://mangaae.com/fairy-tail/','_blank') ">Read</button>
+
+                  <br>
+                </div>
+              </div>
+
+
+
+              <div class="card">
+                <img src="manga/full.jpg" alt="full metal alchmest">
+                <div class="descriptions">
+                  <h1>Full Metal Alchmest: Brotherhood</h1>
+                  <p>Action, Adventure, Comedy, Drama, Shounen, Military</p>
+
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <p>Alchemists are knowledgeable and naturally talented individuals who can manipulate and modify matter due to their art. Yet despite the wide range of possibilities, alchemy is not as all-powerful as most would believe.</p>
+
+                  <button class="button button1 bt_Full_Metal_alchmest" onclick="window.open('https://myanimelist.net/manga/25/Fullmetal_Alchemist','_blank') ">See in MyAnimeList</button>
+                  <button class="button button2 bt_Full_Metal_alchmest" onclick="window.open('https://mangaae.com/full-metal-alchemist','_blank') ">Read</button>
+
+                  <br>
+                </div>
+              </div>
+            </div>
+
+
+
+          </section>
+
+
+
+        </div>
+
+  </div>
+
+
+  <script src="app.js"></script>
+
+
+
+
+  <footer class="footer">All Copyright Reserved to <strong>Animeyzo Team © 2020 </strong>.</footer>
+</body>
+
+
+</html>

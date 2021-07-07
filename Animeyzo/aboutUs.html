@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .aboutUs-container {
+      text-align: center;
+      width: 100%;
+      padding: 30px;
+    }
+
+    .goals-container {
+      background-color: #68b8bb;
+      padding: 10px;
+      position: relative;
+      text-align: center;
+      border-radius: 5px;
+    }
+
+    .header-1 {
+      font-size: 28px;
+      left: 0;
+      animation-name: fadeIn;
+      animation-duration: 6s;
+    }
+
+    .header-2 {
+      font-size: 24px;
+      animation-name: fadeIn;
+      animation-duration: 7s;
+      display: inline-flex;
+      flex-direction: column;
+    }
+
+    .header-3 {
+      font-size: 24px;
+      animation-name: fadeIn;
+      animation-duration: 8s;
+      display: inline-flex;
+      flex-direction: column;
+    }
+
+    .header-4 {
+      font-size: 24px;
+      animation-name: fadeIn;
+      animation-duration: 9s;
+      display: inline-flex;
+      flex-direction: column;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: sans-serif;
+      background-color: #f1f1f1;
+    }
+
+    .container {
+      width: 100%;
+      position: relative;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .container-container {
+      background-image: url('back.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-top: 200px;
+      border-radius: 5px;
+      padding-bottom: 30px;
+    }
+
+    .container-container h1 {
+      color: white;
+    }
+
+    .container .card {
+      position: relative;
+      border-radius: 10px;
+    }
+
+    .container .card .icon {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #f00;
+      transition: 0.7s;
+      z-index: 1;
+    }
+
+    .container .card:nth-child(1) .icon {
+      background: #e07768;
+    }
+
+    .container .card:nth-child(2) .icon {
+      background: #6eadd4;
+    }
+
+    .container .card:nth-child(3) .icon {
+      background: #4aada9;
+    }
+
+    .container .card:nth-child(4) .icon {
+      background: rgb(219, 176, 95);
+    }
+
+
+    .container .card .icon .fa {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 80px;
+      transition: 0.7s;
+      color: #fff;
+    }
+
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 80px;
+      transition: 0.7s;
+      color: #fff;
+    }
+
+    .container .card .face {
+      width: 300px;
+      height: 200px;
+      transition: 0.5s;
+    }
+
+    .container .card .face.face1 {
+      position: relative;
+      background: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      transform: translateY(100px);
+    }
+
+    .container .card:hover .face.face1 {
+      background: #ff0057;
+      transform: translateY(0px);
+    }
+
+    .container .card .face.face1 .content {
+      opacity: 1;
+      transition: 0.5s;
+    }
+
+    .container .card:hover .face.face1 .content {
+      opacity: 1;
+    }
+
+    .container .card .face.face1 .content i {
+      max-width: 100px;
+    }
+
+    .container .card .face.face2 {
+      position: relative;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      box-sizing: border-box;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+      transform: translateY(-100px);
+    }
+
+    .container .card:hover .face.face2 {
+      transform: translateY(0);
+    }
+
+    .container .card .face.face2 .content p {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      color: #414141;
+    }
+
+    .container .card .face.face2 .content h3 {
+      margin: 0 0 10px 0;
+      padding: 0;
+      color: #fff;
+      font-size: 24px;
+      text-align: center;
+      color: #414141;
+    }
+
+    .container a {
+      text-decoration: none;
+      color: #414141;
+    }
+
+    .icon h1 {
+      color: white;
+    }
+
+
+    .blog-card {
+      max-width: 550px;
+      width: 100%;
+      height: 500px;
+      position: relative;
+      font-family: 'Droid Serif', serif;
+      color: #fff;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 0px;
+      box-shadow: 0px 10px 20px -9px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      transition: all 0.4s;
+      background: url('back.jpg') center no-repeat;
+      background-size: 100%;
+      background-size: cover;
+    }
+
+    .blog-card a {
+      color: #fff;
+      text-decoration: none;
+      transition: all 0.2s
+    }
+
+    .blog-card .color-overlay {
+      background: rgba(64, 84, 94, 0.5);
+      width: 550px;
+      height: 500px;
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      left: 0;
+      transition: background 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
+    }
+
+    .blog-card .gradient-overlay {
+      background-image: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.6) 21%);
+      width: 550px;
+      height: 500px;
+      position: absolute;
+      top: 350px;
+      left: 0;
+      z-index: 15;
+    }
+
+    .blog-card:hover {
+      box-shadow: 0px 18px 20px -9px rgba(0, 10, 30, 0.75);
+    }
+
+    .blog-card:hover .card-info {
+      opacity: 1;
+      bottom: 100px;
+    }
+
+    .blog-card:hover .color-overlay {
+      background: rgba(64, 64, 70, 0.8);
+    }
+
+    .blog-card:hover .title-content {
+      margin-top: 70px
+    }
+
+    .title-content {
+      text-align: center;
+      margin: 170px 0 0 0;
+      position: absolute;
+      z-index: 20;
+      width: 100%;
+      top: 0;
+      left: 0;
+      transition: all 0.6s
+    }
+
+    .blog-card:hover h3:after {
+
+      animation: changeLetter 0.3s 1 linear;
+      width: 80%
+    }
+
+    .blog-card h3,
+    h1 {
+      font-size: 1.9em;
+      font-weight: 400;
+      letter-spacing: 1px;
+      font-family: 'Abril Fatface', serif;
+      margin-bottom: 0;
+      display: inline-block;
+    }
+
+    .blog-card h3 a {
+      text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+      transition: all 0.2s
+    }
+
+    .blog-card h3 a:hover {
+      text-shadow: 0px 8px 20px rgba(0, 0, 0, 0.95);
+    }
+
+    h3:after {
+      content: " ";
+      display: block;
+      width: 10%;
+      height: 2px;
+      margin: 20px auto;
+      border: 0;
+      background: #BDA26B;
+      transition: all 0.2s
+    }
+
+    @keyframes changeLetter {
+      0% {
+        width: 10%;
+      }
+
+      100% {
+        width: 80%;
+      }
+    }
+
+    .intro {
+      width: 170px;
+      margin: 0 auto;
+      color: #ddd;
+      font-style: italic;
+      line-height: 18px;
+    }
+
+    .intro a {
+      color: #ddd
+    }
+
+    .intro a:hover {
+      text-decoration: underline
+    }
+
+    .card-info {
+      box-sizing: border-box;
+      padding: 0;
+      width: 100%;
+      position: absolute;
+      bottom: -40px;
+      left: 0;
+      margin: 0 auto;
+      padding: 0 50px;
+      font-style: 16px;
+      line-height: 24px;
+      z-index: 20;
+      opacity: 0;
+      transition: bottom 0.64s, opacity 0.63s cubic-bezier(0.33, 0.66, 0.66, 1);
+    }
+
+    .card-info a {
+      display: block;
+      width: 100px;
+      margin: 15px auto;
+      background: #fff;
+      color: #444;
+      padding: 3px 10px;
+      border-radius: 2px;
+      font-size: 0.8em
+    }
+
+    .card-info a:hover {
+      background: #8e7c49;
+      color: #fff;
+    }
+
+    .card-info a:hover span {
+      filter: brightness(10);
+      opacity: 1
+    }
+
+    .utility-info {
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      z-index: 20;
+      width: 100%;
+      text-align: left
+    }
+
+    .utility-info:after {
+      content: " ";
+      background: url(https://rawcdn.githack.com/Nodws/NodPen/ffad95aa5244b4b09a3c7c1508a018959bbedb7e/postItem/licons.svg) center no-repeat;
+      background-size: 30px auto;
+      display: block;
+      opacity: 0.4;
+      position: absolute;
+      bottom: 25px;
+      right: 15px;
+      width: 30px;
+      height: 15px
+    }
+
+    .utility-info a:hover {
+      text-decoration: underline
+    }
+
+    .utility-list {
+      list-style-type: none;
+      margin: 0 0 10px 20px;
+      padding: 0;
+      width: 100%;
+
+    }
+
+    .utility-list li {
+      margin: 0 5px 0 0;
+      padding: 3px 0 15px 0px;
+      display: inline-block;
+
+      font-size: 0.8em
+    }
+
+    .licon {
+      position: relative;
+      width: 23px;
+      height: 15px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .licon:before {
+      content: "";
+      background: url(https://rawcdn.githack.com/Nodws/NodPen/ffad95aa5244b4b09a3c7c1508a018959bbedb7e/postItem/licons.svg?) -2px -6px no-repeat;
+      background-size: 250px;
+      width: 26px;
+      height: 20px;
+      display: inline-block;
+      vertical-align: middle;
+      position: absolute;
+      top: -3px;
+      left: 0;
+    }
+
+    .icon-white {
+      filter: brightness(10);
+    }
+
+    .icon-black {
+      filter: brightness(0);
+      opacity: 0.6
+    }
+
+    .icon-like:before {
+      background-position: -183px -6px;
+
+    }
+
+    .icon-com:before {
+      background-position: -63px -4px;
+
+    }
+
+    .icon-dat:before {
+      background-position: -94px -7px;
+    }
+
+    .icon-tag:before {
+      background-position: -33px -6px;
+
+    }
+
+    @media (max-width:750px) {
+      .utility-info {
+        text-align: center;
+      }
+
+      .utility-info ul {
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box
+      }
+
+      .utility-info li {
+        width: 49%;
+        display: inline-block;
+        box-sizing: border-box;
+        margin: 0
+      }
+    }
+
+    @media (max-width:500px) {
+      .utility-info li:last-of-type {
+        width: 100%
+      }
+
+      .card-info {
+        display: none
+      }
+
+      .blog-card:hover .title-content,
+      .title-content {
+        margin-top: 40px
+      }
+
+      .blog-card {
+        height: 300px
+      }
+
+      .blog-card h3 {
+        font-size: 1.3em
+      }
+
+      .intro {
+        font-size: 0.8em
+      }
+    }
+
+
+
+    #profile-badges:after {
+      content: "BRO";
+      font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+      font-size: 13px;
+      font-weight: 500;
+      text-transform: uppercase;
+      padding: 1px 4px 1px 4px;
+      color: black !important;
+      border-radius: 3px;
+      position: relative;
+      top: -2px;
+      text-shadow: none !important;
+      white-space: nowrap;
+      letter-spacing: 0;
+      background: #FFDD40;
+    }
+
+    .profile-header {
+      background: #333 url(https://images.unsplash.com/photo-1435783099294-283725c37230?dpr=1&auto=compress,format&fit=crop&w=1376&h=635&q=80&cs=tinysrgb&crop=&bg=) top center no-repeat;
+      background-size: cover;
+      font-size: 3em;
+      position: relative
+    }
+
+    .profile-header:after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(23, 23, 31, 0.42);
+      z-index: 0
+    }
+
+    #profile-links a {
+      font-family: 'Abril Fatface', serif;
+      font-size: 1.2em
+    }
+
+
+    .profile-links a[href*=nodws\.com]:before {
+      content: "\2616";
+      color: #0a45b5;
+      padding-right: 3px
+    }
+
+    .profile-links a[href*=twitter]:before {
+      content: "\1f426";
+      color: #08c
+    }
+
+    .profile-links a[href*=dribbble]:before {
+      content: "\26BE";
+      color: #d055bf
+    }
+
+    #following-this-user {
+      pointer-events: none
+    }
+
+    #follow-this-user {
+      font-size: 1.2em;
+      border-color: #359ef9
+    }
+
+    #follow-this-user:after {
+      content: "\1f448"
+    }
+
+    .links-and-stats {
+      background: rgb(20, 20, 21);
+    }
+
+    .profile-name h1 {
+      text-shadow: 0 6px 9px rgba(0, 0, 0, 0.48)
+    }
+
+    .profile-avatar {
+      bottom: -10px;
+      width: 150px;
+      height: 150px;
+      border: 0px solid #1E1E1E;
+      background: rgba(2, 2, 2, 0.49);
+      box-shadow: 0 19px 19px -10px rgba(0, 0, 0, 0.63)
+    }
+
+    .profile-username,
+    .upsell,
+    .profile-location,
+    .primary-pro {
+      opacity: 0;
+    }
+
+    .upsell,
+    #pen-as-header-question {
+      display: none
+    }
+
+    .profile-nav-1 a {
+      font-size: 1.2rem;
+    }
+
+    .profile-bio,
+    .profile-nav-1 a.active,
+    .profile-nav-1 a:hover {
+      color: rgba(20, 20, 21, 0.59) !important;
+      font-size: 1.2rem
+    }
+
+    .meta .pen-title {
+      font-family: 'Droid Serif', serif;
+      text-align: center
+    }
+
+    .pagination-button {
+      background-color: #2f2f31;
+      border-color: #2f2f31;
+      transition: all 0.2s
+    }
+
+    .pagination-button:hover {
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2)
+    }
+
+    .single-project .stats,
+    .single-pen .stats {
+      text-align: center;
+      width: 100%
+    }
+
+    .stats svg {
+      fill: #bda26b;
+    }
+
+    .stats svg,
+    .loves .icon-heart {
+      fill: rgba(47, 47, 49, 0) !important;
+      stroke: #ba6 !important;
+      stroke-width: 0.1em !important;
+    }
+
+    .loves .icon-heart {
+      stroke-width: 0.5em !important;
+    }
+
+    .comments svg {
+      stroke-width: 0.35em !important;
+    }
+
+    .single-stat.loves.loved-1 svg {
+      stroke: #fff !important
+    }
+
+    .single-pen:hover h3:after {
+      width: 40%;
+      transition: all 0.2s
+    }
+
+    .pen-actions {
+      border: 0px !important
+    }
+
+    .meta {
+      box-shadow: none !important
+    }
+
+
+    .artboard {
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem;
+      height: 100%;
+      position: relative;
+    }
+
+    @media (max-width: 37.5em) {
+      .artboard {
+        padding: 1rem;
+      }
+    }
+
+    .card {
+      flex: initial;
+      position: relative;
+      height: 19rem;
+      width: 15rem;
+      -moz-perspective: 200rem;
+      perspective: 200rem;
+      margin: 2rem;
+    }
+
+    .card__side {
+      height: 19rem;
+      transition: all 0.8s ease;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      -webkit-backface-visibility: hidden;
+      /* We don't want to see the back part of the element. */
+      backface-visibility: hidden;
+      /* We don't want to see the back part of the element. */
+      border-radius: 3px;
+      overflow: hidden;
+      /* The image is overflowing the parent. */
+      box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15);
+    }
+
+    .card__side--front {
+      background-image: linear-gradient(to right bottom, rgba(230, 130, 17, 0.65), rgba(102, 17, 91, 0.7)), url('cropped-anime-mix-hd-wallpaper1.jpg');
+    }
+
+    .card__side--back {
+      background-color: #fff;
+      transform: rotateY(180deg);
+    }
+
+    .card:hover .card__side--back {
+      transform: rotateY(0);
+    }
+
+    .card:hover .card__side--front {
+      transform: rotateY(-180deg);
+    }
+
+    .card__theme {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      top: 54%;
+      width: 90%;
+      text-align: center;
+    }
+
+    .card__theme-box {
+      color: #fff;
+      margin-bottom: 8rem;
+    }
+
+    .card__subject {
+      font-family: "Inconsolata", monospace;
+      letter-spacing: 0.8rem;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    .card__title {
+      font-family: "VT323", monospace;
+      text-transform: uppercase;
+      font-size: 3rem;
+      font-weight: 100;
+    }
+
+    .card__cover {
+      position: relative;
+      background-size: cover;
+      height: 3rem;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      background-image: linear-gradient(to top right, rgba(30, 11, 54, 0.65), rgba(202, 55, 130, 0.65)), url(https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg);
+    }
+
+    .card__heading {
+      text-align: center;
+      color: #fff;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 75%;
+    }
+
+    .card__heading-span {
+      font-family: "VT323", monospace;
+      font-size: 1.4rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      padding: 1rem 0.5rem;
+      color: #fff;
+    }
+
+    .card__details {
+      font-family: "Inconsolata", monospace;
+      padding: 1rem 0.5rem;
+    }
+
+    .card__details ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .card__details ul li {
+      text-align: center;
+      font-size: 1.8rem;
+      padding: 1rem;
+    }
+
+    .card__details ul li:not(:last-child) {
+      border-bottom: 1px solid #eee;
+    }
+
+    @media only screen and (max-width: 37.5em),
+    only screen and (hover: none) {
+      .card {
+        height: auto;
+        border-radius: 3px;
+        background-color: #fff;
+        box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15);
+      }
+
+      .card__side {
+        height: auto;
+        position: relative;
+        box-shadow: none;
+      }
+
+      .card__side--front {
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+      }
+
+      .card__side--back {
+        transform: rotateY(0);
+      }
+
+      .card:hover .card__side--front {
+        transform: rotateY(0);
+      }
+
+      .card__details {
+        padding: 1rem 0.5rem;
+      }
+
+      .card__theme {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0);
+        width: 100%;
+        padding: 5rem 4rem 1.5rem 4rem;
+        text-align: right;
+      }
+
+      .card__theme-box {
+        margin-bottom: 1rem;
+      }
+
+      .card__title {
+        font-size: 2rem;
+      }
+    }
+
+
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="aboutUs-container">
+
+
+    <div>
+      <div class="blog-card spring-fever">
+        <div class="title-content">
+          <h3><a href="#">Our Goals</a></h3>
+          <div class="intro"> <a href="GroupProject.html">Animeyzo</a> </div>
+        </div>
+        <div class="card-info">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+          et dolore magna aliqua. Ut enim ad minim...
+        </div>
+
+        <div class="gradient-overlay"></div>
+        <div class="color-overlay"></div>
+      </div><!-- /.blog-card -->
+
+    </div>
+
+
+    <div class="container-container">
+      <h1>Creators</h1>
+
+      <div class="container">
+        <div class="artboard">
+          <div class="card">
+
+            <div class="card__side card__side--back">
+              <div class="card__cover">
+                <h4 class="card__heading">
+                  <span class="card__heading-span">About</span>
+                </h4>
+              </div>
+              <div class="card__details" style="font-size:20px">
+                <strong >Name: khalid alzhrani</strong><br>
+                  <p >i am IT student and i live in jeddah and i am 22 years old and i love madrid</p>
+              </div>
+            </div>
+
+            <div class="card__side card__side--front">
+              <div class="card__theme">
+                <div class="card__theme-box">
+                  <p class="card__title">Khalid</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="artboard">
+          <div class="card">
+
+            <div class="card__side card__side--back">
+              <div class="card__cover">
+                <h4 class="card__heading">
+                  <span class="card__heading-span">About</span>
+                </h4>
+              </div>
+              <div class="card__details">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, ex! Facilis assumenda
+                  temporibus reiciendis quisquam rem quibusdam nihil. Dolores quas similique, fugiat
+                  eum incidunt ea aut libero saepe dicta recusandae.</p>
+              </div>
+            </div>
+
+            <div class="card__side card__side--front">
+              <div class="card__theme">
+                <div class="card__theme-box">
+                  <p class="card__title">Mohammed</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="artboard">
+          <div class="card">
+
+            <div class="card__side card__side--back">
+              <div class="card__cover">
+                <h4 class="card__heading">
+                  <span class="card__heading-span">About</span>
+                </h4>
+              </div>
+              <div class="card__details">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, ex! Facilis assumenda temporibus reiciendis quisquam rem quibusdam nihil. Dolores quas similique, fugiat eum incidunt ea aut libero saepe dicta recusandae.</p>
+              </div>
+            </div>
+
+            <div class="card__side card__side--front">
+              <div class="card__theme">
+                <div class="card__theme-box">
+                  <p class="card__title">Saden</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="artboard">
+          <div class="card">
+
+            <div class="card__side card__side--back">
+              <div class="card__cover">
+                <h4 class="card__heading">
+                  <span class="card__heading-span">About</span>
+                </h4>
+              </div>
+              <div class="card__details">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, ex! Facilis assumenda temporibus reiciendis quisquam rem quibusdam nihil. Dolores quas similique, fugiat eum incidunt ea aut libero saepe dicta recusandae.</p>
+              </div>
+            </div>
+
+            <div class="card__side card__side--front">
+              <div class="card__theme">
+                <div class="card__theme-box">
+                  <p class="card__title">Mohanad</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+</body>
+
+</html>

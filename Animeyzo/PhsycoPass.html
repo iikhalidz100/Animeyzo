@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/f323026c39.js" crossorigin="anonymous"></script>
+  <title>Animeyzo</title>
+
+  <style>
+    #vid{
+
+    }
+  </style>
+<script>
+  function trailer(){
+    document.getElementById("vid").src = "https://www.youtube.com/embed/YzuJnyebc40"; // done
+  }
+  function ep1(){
+    document.getElementById("vid").src="https://www.youtube.com/embed/vFWKosg61O4" ; //done
+  }
+  function ep2(){
+    document.getElementById("vid").src = "https://www.youtube.com/embed/PIA5Hf_UeRs"; //done
+  }
+  function anime() {
+    document.querySelector(".close").style.display = "block";
+    document.querySelector(".manga").style.display = "none";
+    document.querySelector(".contact").style.display = "none";
+    document.querySelector(".homePage").style.display = "none";
+
+  }
+
+  // function anime1() {
+  //   document.querySelector(".close").style.display = "block";
+  //   document.querySelector(".manga").style.display = "none";
+  //   document.querySelector(".contact").style.display = "none";
+  //   document.querySelector(".homePage").style.display = "none";
+  //   success();
+  //
+  // }
+  // display manga tab
+
+  function manga() {
+    document.querySelector(".close").style.display = "none";
+    document.querySelector(".manga").style.display = "block";
+    document.querySelector(".contact").style.display = "none";
+    document.querySelector(".homePage").style.display = "none";
+  }
+  // display contact tab
+
+  function contact() {
+    document.querySelector(".close").style.display = "none";
+    document.querySelector(".manga").style.display = "none";
+    document.querySelector(".contact").style.display = "block";
+    document.querySelector(".homePage").style.display = "none";
+
+
+  }
+  // display home tab
+
+  function home() {
+    document.querySelector(".close").style.display = "none";
+    document.querySelector(".manga").style.display = "none";
+    document.querySelector(".contact").style.display = "none";
+    document.querySelector(".homePage").style.display = "block";
+}
+</script>
+</head>
+  <body style="background-color:#E3E2DF">
+    <div class="headerPage">
+      <br>
+      <br><br><br>
+      <br><br>
+    </div>
+    <div class="topnav  " id="navbar">
+      <a href="GroupProject.html" onclick="home()"><i class="fa fa-home"></i><strong> Home</strong></a>
+          <a href="GroupProject.html" onclick="anime()" > <i class="fas fa-play-circle"></i><strong> Anime</strong></a>
+          <a href="GroupProject.html" onclick="manga()" > <i class="fas fa-book-open"> </i><strong> Manga</strong></a>
+          <a href="GroupProject.html" onclick="contact()">  <i class="fas fa-envelope"></i><strong> Contact us</strong></a>
+          <a href="aboutUs.html" target="_blank" > <i class="far fa-address-card"></i> <strong> About us</strong></a>
+      <input type="text" id="myInput" onkeyup="SearchFun() " placeholder="Search for names.." style="width:500px;height:40px;">
+
+
+    </div>
+    <br>
+    <center>
+<h1><a href=''>Phsyco Pass Anime</a></h1>
+</center>
+<p style="text-align:center;">Click on the button to view the episodes menu.</p>
+<div class="ttt">
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Episodes</button>
+    <div class="tttt">
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#trailer" onclick="trailer()">Trailer</a>
+        <a href="#Ep1" onclick="ep1()">Episode 1</a>
+        <a href="#Ep2" onclick="ep2()">Episode 2</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+  <div class="Trailer">
+    <center>
+    <iframe id="vid"
+    width="800"
+    height="500"
+    src="https://www.youtube.com/embed/YzuJnyebc40"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+    </iframe>
+    </center>
+  </div>
+
+  <div class="contact">
+    <h1 style = "color: #68b8bb;">Leave your Comment</h1>
+    <form action="/action_page.php">
+      <input type="text" id="fname" name="fullName" placeholder="Full Name ...">
+
+      <input type="text" id="email" name="email" placeholder="E-mail ...">
+
+
+      <textarea id="subject" name="subject" placeholder="Comment ..." style="height:200px"></textarea>
+      <br>
+      <button class="button button3" style="  padding: 12px 55px; "><strong>Submit</strong></button>
+      <br>
+
+    </form>
+    <br>
+    <div class="location">
+      <ul>
+        <li><i class="fa fa-map-marker" aria-hidden="true"></i> Jeddah Saudi Arabia, King Abdulaziz University, Makkah Province, 23325</li><br>
+        <li><i class="fa fa-phone" aria-hidden="true"></i> +966-555555555</li>
+        <li><i class="fa fa-envelope-o" aria-hidden="true"></i> animeyzo@xyz.com</li>
+      </ul>
+
+    </div>
+
+
+  </div>
+
+</div>
+<div class="navigation"></div>
+</div>
+
+</body>
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+
+
+</html>
